@@ -1,9 +1,10 @@
 // Load config
+const dotenv = require('dotenv');
 dotenv.config({ path: './config/config.env' });
 const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const methodOverride = require('method-override');
