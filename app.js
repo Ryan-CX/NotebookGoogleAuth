@@ -24,7 +24,7 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// Method override
+// Method override Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
 app.use(
 	methodOverride(function (req, res) {
 		if (req.body && typeof req.body === 'object' && '_method' in req.body) {
